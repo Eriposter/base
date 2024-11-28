@@ -1,0 +1,40 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 450px; /* Ajuste para o tamanho da sua imagem */
+  height: 400px;
+  position: relative;
+  background: url('../../../../../../../public/assets/img/about-img.jpg') no-repeat center/cover;
+}
+
+.cell {
+  position: relative;
+  border: 5px solid white; /* Espaço entre os recortes */
+  background: inherit; /* Usa a imagem de fundo do grid */
+  background-size: 400px 400px; /* Certifique-se de que o tamanho é consistente */
+}
+
+.cell:nth-child(1) { background-position: 0% 0%; }
+.cell:nth-child(2) { background-position: 50% 0%; }
+.cell:nth-child(3) { background-position: 100% 0%; }
+.cell:nth-child(4) { background-position: 0% 50%; }
+.cell:nth-child(5) { background-position: 50% 50%; }
+.cell:nth-child(6) { background-position: 100% 50%; }
+.cell:nth-child(7) { background-position: 0% 100%; }
+.cell:nth-child(8) { background-position: 50% 100%; }
+.cell:nth-child(9) { background-position: 100% 100%; }
+
+/* Células parcialmente preenchidas */
+.half {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%);
+}
+
+
+.bgcol{
+  background-color: rgba(191, 24, 24, 1)!important;
+}
+
+.color{
+  color: rgba(191, 24, 24, 1)!important;
+}

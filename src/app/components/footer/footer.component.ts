@@ -19,17 +19,17 @@ export class FooterComponent  {
       description:
         'footer.localizacao',
       action: null,
-      icon: 'assets/footer/icon-location.svg',
+      icon: 'assets/svg/icon-location.svg',
     },
     {
-      description: ' +244 222 700 000',
-      action: 'tel: +244 222 700 000',
-      icon: 'assets/footer/icon-phone.svg',
+      description: ' +244 923 755 040',
+      action: 'tel: +244 923 755 040',
+      icon: 'assets/svg/icon-phone.svg',
     },
     {
-      description: 'correspondencia.cnnca@minfin.gov.ao',
-      action: 'mailto:correspondencia.cnnca@minfin.gov.ao',
-      icon: 'assets/footer/icon-mail.svg',
+      description: 'comercial@m3tech.ao',
+      action: 'mailto:comercial@m3tech.ao',
+      icon: 'assets/svf/icon-mail.svg',
     },
   ];
   links = [

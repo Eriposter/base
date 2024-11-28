@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 
-.minfin {
-  width: 100%;
-  height: 70px;
-  background-color: #fff;
-  line-height: 60px;
+.primeiroHeader{
+position: fixed;
+width: 100%;
 }
 
 /* Adicione isso ao seu CSS */
@@ -111,7 +109,7 @@ nav {
   display: inline-block;
   width: 100%;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-brand {
@@ -256,9 +254,9 @@ form {
 }
 .navbar-expand-lg .navbar-collapse {
   display: flex!important;
-  /* flex-basis: auto; */
-  flex-wrap: wrap!important;
-  flex-direction: row-reverse!important;
+  // flex-wrap: wrap!important;
+  // flex-direction: row-reverse!important;
+  justify-content: flex-end;
 }
 .modal-dialog{
   margin: 0px!important;

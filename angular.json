@@ -26,6 +26,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/web.config",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -39,8 +40,16 @@
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
+                "src/styles.scss",
                 "node_modules/@popperjs/core/dist/umd/popper.min.js",
-                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                "public/assets/lib/wow/wow.min.js",
+                "public/assets/lib/easing/easing.min.js",
+                "public/assets/lib/waypoints/waypoints.min.js",
+                "public/assets/lib/counterup/counterup.min.js",
+                "public/assets/lib/owlcarousel/owl.carousel.min.js",
+                "public/assets/js/main.js"
+
             ]
           },
           "configurations": {
