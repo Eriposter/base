@@ -1,0 +1,50 @@
+.cont {
+  background-position: center;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-color: var(--Dark-blue);
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(107deg, rgba(16, 24, 40, 0.86) 0%, rgba(16, 24, 40, 0.99) 34%, #101828 100%);
+}
+
+li {
+  font-size: 14px;
+  transition: 3s linear all;
+
+  :hover {
+    font-weight: 700;
+    text-decoration: none!important;
+
+  }
+}
+
+@media screen and (max-width : 965px) {
+  .logoSetic {
+    width: 150px;
+  }
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  p {
+    color: white;
+    margin-bottom: 0;
+    margin-left: 16px;
+    line-height: 17px;
+    font-weight: 600px !important;
+  }
+}
+
+//Ícones styles
+.p-2 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+//Selo do ISJ
+tr {
+  margin-top: -250px;
+}

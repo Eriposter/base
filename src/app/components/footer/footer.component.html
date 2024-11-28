@@ -1,0 +1,58 @@
+<section class="cont pt-5 ">
+  <div class="container">
+    <footer class="pt-5 text-white">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-3">
+          <a class="navbar-brand" href="#"><img src="assets/img/logo-b.png" width="300px" alt="">
+            <!-- <p>Instituto de <br>Supervisão de Jogos</p> -->
+          </a>
+          <hr>
+          <address>
+            @for (address of addresses; track address) {
+            <ng-container>
+              <div class="d-flex align-items-center mb-3 small">
+                <div class="p-2  bg-opacity-25 me-3"><img [src]="address.icon" alt=""></div>
+                @if (address.action) {
+                <address>{{address.description | translate}}</address>
+                }
+
+                @else {
+                <address>{{address.description | translate}}</address>
+                }
+              </div>
+            </ng-container>
+            }
+
+          </address>
+        </div>
+        @for (item of links; track item;) {
+        <div class="col-12 col-md-2">
+          <h5 class="mb-3">{{item.title | translate}}</h5>
+          @for (subItem of item.items; track subItem) {
+          <ul class="nav flex-column small">
+            @if (subItem.url) {
+            <li class="nav-item mb-2"><a [routerLink]="subItem.url" class="nav-link p-0 text-white">{{subItem.name | translate}}</a>
+            </li>
+            }
+
+            @if (subItem.url.startsWith('http')) {
+            <li class="nav-item mb-2"><a [href]="subItem.url" target="_blank"
+                class="nav-link p-0 text-white">{{subItem.name | translate}}</a></li>
+            }
+
+            @if (subItem.url === '#') {
+            <li class="nav-item mb-2"><a [href]="subItem.url" class="nav-link p-0 text-white">{{subItem.name | translate}}</a></li>
+            }
+          </ul>
+          }
+
+        </div>
+        }
+
+      </div>
+    </footer>
+  </div>
+  <div class="d-flex justify-content-center py-4 mt-4" style="background-color: var(--Darkest-blue)">
+    <p class="text-white ">© {{anoCorrente}} CNNCA. {{'footer.direitos' | translate}}</p>
+  </div>
+</section>
