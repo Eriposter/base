@@ -7,6 +7,8 @@ import { BannerComponent } from "./components/banner/banner.component";
 import { SobreComponent } from "./components/sobre/sobre.component";
 import { ServicosHomeComponent } from "./components/servicos-home/servicos-home.component";
 import { ProjectosHomeComponent } from "./components/projectos-home/projectos-home.component";
+import { SharedModule } from '../../../../shared/shared.module';
+import { TestemunhosComponent } from "./components/testemunhos/testemunhos.component";
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ProjectosHomeComponent } from "./components/projectos-home/projectos-ho
     BannerComponent,
     SobreComponent,
     ServicosHomeComponent,
-    ProjectosHomeComponent
+    ProjectosHomeComponent,
+    SharedModule,
+    TestemunhosComponent
 ]
 })
 export class HomeModule { }

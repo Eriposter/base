@@ -13,6 +13,8 @@ import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { MapLangPipe } from './pipes/map-lang.pipe';
 import { DebounceDirective } from './directives/debounce.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   imports: [
@@ -26,13 +28,27 @@ import { DebounceDirective } from './directives/debounce.directive';
     AvatarModule,
     BadgeModule,
     CommonModule,
-    DropdownModule
+    DropdownModule,
+    FontAwesomeModule,
   ],
   declarations: [MapLangPipe, DebounceDirective],
-  providers:[
-    DebounceDirective
-  ],
+  providers: [DebounceDirective],
 
-  exports: [ReactiveFormsModule, MapLangPipe, DebounceDirective, FormsModule, PaginatorModule, CarouselModule, TranslateModule, DialogModule, ButtonModule, CheckboxModule, AccordionModule, CommonModule, DropdownModule  ]
+  exports: [
+    ReactiveFormsModule,
+    MapLangPipe,
+    DebounceDirective,
+    FormsModule,
+    PaginatorModule,
+    CarouselModule,
+    TranslateModule,
+    DialogModule,
+    ButtonModule,
+    CheckboxModule,
+    AccordionModule,
+    CommonModule,
+    DropdownModule,
+    FontAwesomeModule,
+  ],
 })
 export class SharedModule {}
