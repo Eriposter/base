@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../../shared/shared.module';
 import { Router, RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports:[RouterModule, SharedModule],
+  imports:[RouterModule, SharedModule, FontAwesomeModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -13,23 +15,26 @@ export class FooterComponent  {
   activeMenuItem: number | null = null;
   anoCorrente: number = new Date().getFullYear();
 
+  localizacao = faMapMarkerAlt;
+  telefone = faPhoneAlt;
+  email = faEnvelope;
+
 
   addresses = [
     {
-      description:
-        'footer.localizacao',
+      description: 'footer.localizacao',
       action: null,
-      icon: 'assets/svg/icon-location.svg',
+      icon: faMapMarkerAlt, // Usar o ícone do Font Awesome
     },
     {
-      description: ' +244 923 755 040',
-      action: 'tel: +244 923 755 040',
-      icon: 'assets/svg/icon-phone.svg',
+      description: '+244 923 755 040',
+      action: 'tel:+244923755040',
+      icon: faPhoneAlt, // Ícone de telefone
     },
     {
       description: 'comercial@m3tech.ao',
       action: 'mailto:comercial@m3tech.ao',
-      icon: 'assets/svf/icon-mail.svg',
+      icon: faEnvelope, // Ícone de envelope
     },
   ];
   links = [
@@ -98,15 +103,7 @@ export class FooterComponent  {
         }
 
       ],
-    },
-    {
-      title: 'footer.central',
-      items: [
-        { name: 'header.contacto', url: 'contacto' },
-        // { name: 'Mapa do site', url: 'mapa' },
-        // { name: 'Políticas de privacidade', url: 'politica' }
-      ],
-    },
+    }
   ];
 
 
