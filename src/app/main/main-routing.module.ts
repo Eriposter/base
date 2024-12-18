@@ -19,9 +19,14 @@ const routes: Routes = [
           import('./modules/sobre/sobre.module').then((m) => m.SobreModule),
       },
       {
-        path: 'projecto',
+        path: 'projectos',
         loadChildren: () =>
           import('./modules/projecto/projecto.module').then((m) => m.ProjectoModule),
+      },
+      {
+        path: 'servicos',
+        loadChildren: () =>
+          import('./modules/servicos/servicos.module').then((m) => m.ServicosModule),
       },
       {
         path: 'contacto',

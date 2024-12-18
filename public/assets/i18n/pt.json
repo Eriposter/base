@@ -34,8 +34,12 @@
     },
     "servicos": {
       "titulo": "Serviços",
-      "se": "Sector Empresarial",
-      "sp": "Sector Público"
+      "oit": "Outsoursing de IT",
+      "irc": "Infraestrutura de Rede e Cloud",
+      "cc": "Contact Center",
+      "dwm": "Desenvolvimento Web e Mobile",
+      "cs": "Ciber Segurança",
+      "soc": "SOC1 e CCTV"
     },
     "contacto": "Contacto",
     "projectos": "Projectos"
@@ -79,7 +83,7 @@
   },
   "footer": {
     "localizacao": "Kilamba Bloco F. Apt nº 5 - 5 ºAndar Município de Belas Luanda",
-    "sobre-o-cnnca": "Sobre o CNNCA",
+    "sobre-o-cnnca": "Sobre a M3 Tech",
     "press": "Sala de Imprensa",
     "central": "Central",
     "direitos": "Todos os direitos reservados."

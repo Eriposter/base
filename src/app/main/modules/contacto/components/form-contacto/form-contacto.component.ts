@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Aos from 'aos';
 
 @Component({
   selector: 'app-form-contacto',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './form-contacto.component.scss'
 })
 export class FormContactoComponent {
-
+  ngOnInit(): void {
+    Aos.init(); // Inicializar AOS
+  }
 }

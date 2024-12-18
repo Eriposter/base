@@ -62,17 +62,39 @@ export class HeaderComponent implements OnInit {
     // },
     {
       name: 'header.servicos.titulo',
+      url: 'servicos',
       submenu: [
         {
-          name: 'header.legislacao.se',
+          name: 'header.servicos.oit',
           url: 'legislacao/sector-empresarial',
           icon: 'assets/header/sec-empresarial-icon.png',
         },
         {
-          name: 'header.legislacao.sp',
-          url: 'legislacao/sector-publico',
-          icon: 'assets/header/sec-publico-icon.png',
+          name: 'header.servicos.irc',
+          url: 'legislacao/sector-empresarial',
+          icon: 'assets/header/sec-empresarial-icon.png',
+        },
+        {
+          name: 'header.servicos.cc',
+          url: 'legislacao/sector-empresarial',
+          icon: 'assets/header/sec-empresarial-icon.png',
+        },
+        {
+          name: 'header.servicos.dwm',
+          url: 'legislacao/sector-empresarial',
+          icon: 'assets/header/sec-empresarial-icon.png',
+        },
+        {
+          name: 'header.servicos.cs',
+          url: 'legislacao/sector-empresarial',
+          icon: 'assets/header/sec-empresarial-icon.png',
+        },
+        {
+          name: 'header.servicos.soc',
+          url: 'legislacao/sector-empresarial',
+          icon: 'assets/header/sec-empresarial-icon.png',
         }
+
       ],
     },
     // {

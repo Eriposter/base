@@ -27,9 +27,9 @@
                   @for (subItem of item.submenu; track subItem) {
                     <li class="nav-item" [routerLink]="subItem.url">
                       <a class="dropdown-item" [routerLink]="subItem.url">
-                        <div class="span">
+                        <!-- <div class="span">
                           <img [src]="subItem.icon" alt="">
-                        </div>
+                        </div> -->
                         {{subItem.name | translate}}
                       </a>
                     </li>

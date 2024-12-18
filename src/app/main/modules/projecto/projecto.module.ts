@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectoRoutingModule } from './projecto-routing.module';
 import { ProjectoComponent } from './components/projecto/projecto.component';
 import { BannerProjectoComponent } from './components/banner-projecto/banner-projecto.component';
+import { ProjectosComponent } from "./components/projectos/projectos.component";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { BannerProjectoComponent } from './components/banner-projecto/banner-pro
   imports: [
     CommonModule,
     ProjectoRoutingModule,
-    BannerProjectoComponent
-  ]
+    BannerProjectoComponent,
+    ProjectosComponent,
+]
 })
 export class ProjectoModule { }
